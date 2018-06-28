@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pizza: one
+  delivery_info: one
+  payment_method: MyString
+
+two:
+  pizza: two
+  delivery_info: two
+  payment_method: MyString
