@@ -50,5 +50,3 @@ Pizza.create(name: 'Vegetarian', crust_id: 2)
 Pizza.create(name: 'Random Pizza', crust_id: 1)
 
 
-
-#Country.create(name: 'France', population: 65447374)

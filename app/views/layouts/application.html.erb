@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ExamenWebTechnologies</title>
+    <title>Joe's Pizzas</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
-
   <body>
+  <nav class="navbar navbar-default" style="background-color:#8b1c08;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#" >Joe's Pizzas</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><%= link_to 'Home', root_path %></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to new_customer_path do %>
+          <a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+          <% end %>
+        </li>
+        <li><%= link_to new_customer_path do %>
+          <a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+          <% end %>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout </a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
     <%= yield %>
+  </div>
   </body>
 </html>
