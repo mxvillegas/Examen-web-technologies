@@ -2,17 +2,6 @@
   <div clas="col-md-6">
     <h1><%= @pizza.name %></h1>
     <h2>Ingredients: </h2>
-    <% for r in @recipes do%>
-      <%if @pizza.recipe_id = r.id%>
-        <%if @rec_ing.recipe_id = r.id%>
-          <%for i in @ingredients do%>
-            <%if @rec_ing.ingredient_id = i.id%>
-              <h3> <%= i.name %> </h3>
-            <%end%>
 
-          <%end%>
-        <%end%>
-      <%end%>
-    <%end%>
   </div>
 </div>

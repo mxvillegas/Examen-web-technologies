@@ -6,10 +6,9 @@ class PizzaController < ApplicationController
   # GET /customers/1
   # GET /customers/1.json
   def show
-    @pizzas = Pizza.all()
-    @recipes = Recipe.all()
-    @ingredients = Ingredient.all()
-    @rec_ing = RecipeIngredient.all()
+    @pizza = Pizza.find(params[:id])
+    @crusts = Crust.all()
+
 
   end
 

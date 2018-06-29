@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 #Customers:
-Customer.create(name: 'Montserrat', last_name: 'Villegas')
+Customer.create(name: 'Montserrat', last_name: 'Villegas', email: 'mxvillegas@miuandes.cl')
 
 #Ingredients:
 Ingredient.create(name: 'Mozzarella')
@@ -45,8 +45,8 @@ Crust.create(name: 'Regular')
 Crust.create(name: 'Thin')
 
 #Pizzas:
-Pizza.create(name: 'Pepperoni', crust_id: 1)
-Pizza.create(name: 'Vegetarian', crust_id: 2)
-Pizza.create(name: 'Random Pizza', crust_id: 1)
+Pizza.create(name: 'Pepperoni', crust_id: 1, recipe_id: 1)
+Pizza.create(name: 'Vegetarian', crust_id: 2, recipe_id: 2)
+Pizza.create(name: 'Random Pizza', crust_id: 1, recipe_id: 3)
 
 
